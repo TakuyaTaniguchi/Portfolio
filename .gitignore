@@ -1,0 +1,14 @@
+node_modules/*
+.sass-cache/*
+build/*
+dev/.sass-cache
+.node-version
+dev/tmp
+dev/css
+**/*.log
+**/*.html
+dev/images/private1.png
+dev/images/private2.png
+dev/images/private3.png
+dev/images/private4.png
+dev/images/private5.png

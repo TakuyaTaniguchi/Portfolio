@@ -1,0 +1,61 @@
+-
+	var ogp = {
+		'title':'Rin Works!!!',
+		'description':'TakuyaTaniguchi WebDeveloper Portfolio',
+		'url':'test',
+		'image':'http://portfolio.littledemon.pw/images/ogp.png',
+		'siteName':'Rin Works!!!',
+		'lang':'ja',
+		'fbid':'test',
+		'fbid':'test'
+	}
+-
+	var meta = {
+		title:'Rin Works!!!',
+		desc:'TakuyaTaniguchi WebDeveloper Portfolio',
+	}
+include _inc_mixins
+include _inc_conditional
+block slug
+	- var slug = ''
+	- var is_contact = false;
+head
+	block meta_data
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(charset='UTF-8')
+		meta#viewport(content='width=device-width', name='viewport')
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Rin Works!!!">
+		<meta name="twitter:description" content="TakuyaTaniguchi WebDeveloper Portfolio">
+		<link rel="icon" href="https://portfolio.littledemon.pw/images/c_r.ico">
+		+base_meta(meta)
+		+ogp(ogp)
+	block css
+		include _inc_css
+body#top(class=slug)
+	#wrap
+		block header
+			.l-header
+				.l-header_inner
+					h1.l-header_title Works!!
+				.p-hero
+					.p-hero_inner
+						#rings.p-rings
+		block contents
+		block footer
+			.l-footer
+				.l-footer_inner
+					ul.p-snsList
+						li.p-snsList_item
+							a.p-snsList_item_link(href="https://github.com/TakuyaTaniguchi" target="_blank") Github
+						li.p-snsList_item
+							a.p-snsList_item_link(href="https://twitter.com/RinstarskyKujat/" target="_blank") Twitter
+		block flg
+			#responsive_flg
+		//- #totop
+		//- 	a(href="#top") トップ
+	block scripts
+		include _inc_scripts
+	<script type="text/javascript">window.VANTA.RINGS({el: "#rings",backgroundColor: 0xa03c76,color: 0x8be326,backgroundAlpha: 0.00});</script>
+
+</html>

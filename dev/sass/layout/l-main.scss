@@ -1,0 +1,18 @@
+.l-main {
+  position: relative;
+
+  &_inner {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 980px;
+    width: 100%;
+  }
+}
+
+@include breakpoint(sp) {
+  .l-main {
+    padding: 0 20px;
+    &_inner {
+    }
+  }
+}

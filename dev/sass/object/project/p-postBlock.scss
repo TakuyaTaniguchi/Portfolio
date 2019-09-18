@@ -1,0 +1,48 @@
+.p-postBlock {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+
+  &_article {
+    border: solid 3px white;
+    color: white;
+    max-width: 400px;
+    padding: 5px;
+    transition: all .4s;
+    width: 100%;
+
+    &:nth-child(n + 3) {
+      margin-top: 150px;
+    }
+
+    &:hover {
+      transform: perspective(500px) rotateY(20deg);
+      transition: all .6s;
+    }
+
+    &_title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    &_thumbnail {
+      height: 210px;
+      margin-top: 15px;
+      width: 100%;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+
+    &_desc {
+      line-height: 1.7;
+      margin-top: 15px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+extends layout.pug
+block slug
+	- slug = 'home'
+	//上書きしたい箇所があればブロックを呼び出して記述
+block contents
+	main.l-main
+		.l-main_inner
+			.p-postBlock
+				a(href="https://movie-stocker.netlify.com/	" target="_blank").p-postBlock_article
+					.p-postBlock_article_title MovieStocker
+					.p-postBlock_article_thumbnail
+						img(src="/images/img.png", alt="")
+					.p-postBlock_article_desc
+						p お気入りの映画が登録できるアプリケーション、Nuxtとローカルストレージで構成されている。ホスティング先はNetlifyを使用している。
+				a(href="/" target="_blank" style="opacity:0; pointer-events: none;").p-postBlock_article
+
+				a(href="https://takuyataniguchi.github.io/FLOCSS_slides/" target="_blank").p-postBlock_article
+					.p-postBlock_article_title FLOCSS
+					.p-postBlock_article_thumbnail
+						img(src="/images/img2.png", alt="")
+					.p-postBlock_article_desc
+						p 社内用に作成したFLOCSSの発表資料。HTML、CSSの設計に関心があり、約1年間ほど使用したのでその感想と悩みどころをまとめた。
+				a(href="http://laraveltodo.littledemon.pw/login" target="_blank").p-postBlock_article
+					.p-postBlock_article_title TodoAppLaravel
+					.p-postBlock_article_thumbnail
+						img(src="/images/img3.png", alt="")
+					.p-postBlock_article_desc
+						p Laravelで作成したTodoアプリ。バックエンドの勉強のために作成しました。
+				a(href="https://progressbar-game.netlify.com/" target="_blank").p-postBlock_article
+					.p-postBlock_article_title ProgressbarGame
+					.p-postBlock_article_thumbnail
+						img(src="/images/img4.png", alt="")
+					.p-postBlock_article_desc
+						p HTML,CSS,VanilaJsで作成したゲーム。Parcelを使うことが目的であったため、中身はとても単純なコードでできています。
+				a(href="https://github.com/TakuyaTaniguchi/Wikirelay" target="_blank").p-postBlock_article
+					.p-postBlock_article_title ウィキリレー
+					.p-postBlock_article_thumbnail
+						img(src="/images/img6.png", alt="")
+					.p-postBlock_article_desc
+						p ウィキペディアAPIを利用したゲームです。お題の単語まで辿ったリンク回数を競います。React、Firebase構成されています。(開発中)
+				a(href="https://qiita.com/RinT_T" target="_blank").p-postBlock_article
+					.p-postBlock_article_title Qiita
+					.p-postBlock_article_thumbnail
+						img(src="/images/img5.png", alt="")
+					.p-postBlock_article_desc
+						p ふと思いついたことや、書き留めて置きたい事をメモ代わりに投稿しています。
+			.p-privateLink
+				a.p-privateLink_link(href="./private.html") BusinessWorks →

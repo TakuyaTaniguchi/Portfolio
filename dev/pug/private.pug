@@ -1,0 +1,43 @@
+extends layout.pug
+block slug
+	- slug = 'home'
+	//上書きしたい箇所があればブロックを呼び出して記述
+block contents
+	main.l-main
+		.l-main_inner
+			.p-postBlock
+				a(href="https://www.nttdocomo.co.jp/special_contents/beyond2020/" target="_blank").p-postBlock_article
+					.p-postBlock_article_title Beyond2020
+					.p-postBlock_article_thumbnail
+						img(src="/images/private1.png", alt="")
+					.p-postBlock_article_desc
+						p Vue.jsで作成しています。各下層コンテンツのポータルサイトになっており、下層サイトからxmlを作成し読み込んでいます。
+				a(href="/" target="_blank" style="opacity:0; pointer-events: none;").p-postBlock_article
+
+				a(href="https://www.nttdocomo.co.jp/special_contents/beyond2020/future_report/" target="_blank").p-postBlock_article
+					.p-postBlock_article_title FUTURE-REPORT
+					.p-postBlock_article_thumbnail
+						img(src="/images/private2.png", alt="")
+					.p-postBlock_article_desc
+						p DOCOMOのデジタルコンテンツを発信するサイト。ベースはWordpressで構成されており、そこから、静的環境で動作するようにファイルを書き出すプラグインを自作して運用している。プラグインのカスタマイズ、構築、運用保守、ディレクションまで幅広く担当している。
+				a(href="http://imatsui.com/seasonal_topics/post_153/" target="_blank").p-postBlock_article
+					.p-postBlock_article_title イマツイ 
+					.p-postBlock_article_thumbnail
+						img(src="/images/private3.png", alt="")
+					.p-postBlock_article_desc
+						p APIを使用し、Twitetrからのデータをグラフに表示するアプリケーション。秒間何十万というデータを取り扱った。サーバパフォーマンスの改善や集計ロジックの改修などを担当しました。AWS,GCP,MT,Canvasなどを使用しております。
+				a(href="https://www.hypertech.co.jp" target="_blank").p-postBlock_article
+					.p-postBlock_article_title Wordpress
+					.p-postBlock_article_thumbnail
+						img(src="/images/private4.jpg", alt="")
+					.p-postBlock_article_desc
+						p Wordpressで構築されているサイトです。リンクのサイトは主に静的コーディングを担当しました。そのほかにも20件ほどのwebサイトの構築、運用保守に関わっています。
+				a(href="https://www.hypertech.co.jp" target="_blank").p-postBlock_article
+					.p-postBlock_article_title ランディングページ
+					.p-postBlock_article_thumbnail
+						img(src="/images/private5.jpg", alt="")
+					.p-postBlock_article_desc
+						p おおよそ二日程度で製作している、LPサイトになります。月4本程度リリースし、おおよそ一年程度開発に携わりました。また作業効率を上げるため、FLOCSSの導入や、デザインコンポーネントの設計などを行いました。
+			.p-privateLink
+				a.p-privateLink_link(href="/") Personal development →
+			.p-privateLink

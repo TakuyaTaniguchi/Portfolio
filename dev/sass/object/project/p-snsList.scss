@@ -1,0 +1,15 @@
+.p-snsList {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+
+  &_item {
+    display: block;
+    margin: 0 15px;
+
+    &_link {
+      color: white;
+      display: block;
+    }
+  }
+}
