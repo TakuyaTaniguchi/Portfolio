@@ -4,16 +4,31 @@ import SmoothScroll from "modules/SmoothScroll";
 import SpNavi from "modules/SpNavi";
 import ToTop from "modules/ToTop";
 import link_icon from "modules/link_icon";
-// import "./vender/three.min";
-// import './vender/vanta.rings.min';
+import { TweenMax, TimelineMax, Elastic } from 'gsap'
 
-//Vanta
-// window.VANTA.RINGS({
-//     el: "#rings",
-//     backgroundColor: 0xa03c76,
-//     color: 0x8be326,
-//     backgroundAlpha: 0.00
-// })
+/* ===============================================
+bg Art
+=============================================== */
+const bgArt = document.querySelector('.bg-art');
+const bodyWidth = document.body.clientWidth;
+const bodyHeight = document.body.clientHeight;
+console.log(bodyWidth, bodyHeight)
+
+const divs = Array.from({length: 6}, () => {
+      return document.createElement("div");
+      // return tempEl.textContent = 'aaaa';
+  })
+divs.forEach(div => {
+    TweenMax.set(div,{
+        position: "absolute",
+        x: `${Math.random() * bodyWidth}px`,
+        y: `${Math.random() * bodyHeight}px`,
+        fontSize: "140px"
+    })
+    div.textContent = 'A'
+    bgArt.appendChild(div)
+})
+
 
 
 /* ===============================================
@@ -43,3 +58,4 @@ totop.exec();
 if (module.hot) {
   module.hot.accept();
 }
+
