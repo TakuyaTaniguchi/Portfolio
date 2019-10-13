@@ -2,7 +2,7 @@
   align-items: center;
   display: flex;
   justify-content: flex-end;
-
+  padding: 0 40px;
   &_item {
     display: block;
     margin: 0 15px;
@@ -10,6 +10,7 @@
     &_link {
       color: white;
       display: block;
+      font-size: 22px;
     }
   }
 }

@@ -1,12 +1,39 @@
 .u-neon{
     text-shadow: 0 1px 30px skyblue, 0 0 12px blueviolet, 2px 5px 60px blue;
     animation: 1.2s neon infinite alternate ease-in-out;
+    &.-is-orange{
+        text-shadow: 0 1px 30px orange, 0 0 12px red, 2px 5px 60px orangered;
+    }
+    &.-is-red{
+        text-shadow: 0 1px 30px hotpink, 0 0 12px pink, 2px 5px 60px red;
+    }
 }
+
+
+.u-postBlockNeon{
+        &:hover{
+            &.-is-orange{
+                transition: all .1s;
+                box-shadow: 1px 0px 8px 3px orangered inset,
+                0px 0px 6px orange, 0px 0px 8px orangered;
+                color: rgba(255, 255, 255, 1);
+            }
+            .u-postBlockNeon_title{
+                animation: 1.2s neon infinite alternate ease-in-out;
+                &.-is-orange{
+                    text-shadow: 0 1px 30px orange, 0 0 12px red, 2px 5px 60px orangered;
+                }
+                &.-is-red{
+                    text-shadow: 0 1px 30px hotpink, 0 0 12px pink, 2px 5px 60px red;
+                }
+            }
+        }
+}
+
 @keyframes neon {
     0% {
       opacity: 1;
     }
-    
     40% {
       opacity: .85;
     }
