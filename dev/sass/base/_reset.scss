@@ -68,16 +68,8 @@ body {
   @if $-webkit-text-size-adjust == false {
     -webkit-text-size-adjust : none;
   }
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+25,1e5799+25,207cca+53,207cca+78,7db9e8+100 */
-    background: #005c97; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      #363795,
-      #005c97
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      #363795,
-      #005c97
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: rgb(3,175,245);
+background: linear-gradient(90deg, rgba(3,175,245,1) 0%, rgba(24,43,151,1) 2%, rgba(9,9,121,1) 98%, rgba(0,212,255,1) 100%); 
     color: white;
 }
 

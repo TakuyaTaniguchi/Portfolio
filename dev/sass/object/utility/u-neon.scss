@@ -1,0 +1,25 @@
+.u-neon{
+    text-shadow: 0 1px 30px skyblue, 0 0 12px blueviolet, 2px 5px 60px blue;
+    animation: 1.2s neon infinite alternate ease-in-out;
+}
+@keyframes neon {
+    0% {
+      opacity: 1;
+    }
+    
+    40% {
+      opacity: .85;
+    }
+    42% {
+      opacity: .4;
+    }
+    43% {
+      opacity: .85;
+    }
+    45% {
+      opacity: .4;
+    }
+    46% {
+      opacity: .85;
+    }
+  }

@@ -9,25 +9,25 @@ import { TweenMax, TimelineMax, Elastic } from 'gsap'
 /* ===============================================
 bg Art
 =============================================== */
-const bgArt = document.querySelector('.bg-art');
-const bodyWidth = document.body.clientWidth;
-const bodyHeight = document.body.clientHeight;
-console.log(bodyWidth, bodyHeight)
+// const bgArt = document.querySelector('.bg-art');
+// const bodyWidth = document.body.clientWidth;
+// const bodyHeight = document.body.clientHeight;
+// console.log(bodyWidth, bodyHeight)
 
-const divs = Array.from({length: 6}, () => {
-      return document.createElement("div");
-      // return tempEl.textContent = 'aaaa';
-  })
-divs.forEach(div => {
-    TweenMax.set(div,{
-        position: "absolute",
-        x: `${Math.random() * bodyWidth}px`,
-        y: `${Math.random() * bodyHeight}px`,
-        fontSize: "140px"
-    })
-    div.textContent = 'A'
-    bgArt.appendChild(div)
-})
+// const divs = Array.from({length: 6}, () => {
+//       return document.createElement("div");
+//       // return tempEl.textContent = 'aaaa';
+//   })
+// divs.forEach(div => {
+//     TweenMax.set(div,{
+//         position: "absolute",
+//         x: `${Math.random() * bodyWidth}px`,
+//         y: `${Math.random() * bodyHeight}px`,
+//         fontSize: "140px"
+//     })
+//     div.textContent = 'A'
+//     bgArt.appendChild(div)
+// })
 
 
 
