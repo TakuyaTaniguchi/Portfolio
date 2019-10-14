@@ -7,12 +7,30 @@
     &_list{
         display: flex;
         justify-content: flex-start;
+        flex-wrap: wrap;
         &_item{
             margin: 0 15px;
             &_link{
                 font-size: 22px;
                 color:white;
                 font-family: Nixie One,cursive;
+            }
+        }
+    }
+}
+
+@include breakpoint(sp) {
+    .p-nav{
+        margin-top: 15px;
+        &_inner{
+    
+        }
+    
+        &_list{
+            &_item{
+                line-height: 2;
+                &_link{
+                }
             }
         }
     }
