@@ -7,8 +7,22 @@
     &.-is-red{
         text-shadow: 0 1px 30px hotpink, 0 0 12px pink, 2px 5px 60px red;
     }
+    &.-is-green{
+      text-shadow:  0 0 12px rgb(215, 228, 36), 2px 5px 60px rgb(22, 100, 22);
+  }
 }
 
+.u-neonLink{
+  &:hover{
+    animation: 1.2s neon infinite alternate ease-in-out;
+    &.-is-green{
+      text-shadow:  0 0 12px rgb(215, 228, 36), 2px 5px 60px rgb(22, 100, 22);
+    }
+    &.-is-blue{
+      text-shadow: 0 1px 30px skyblue, 0 0 12px blueviolet, 2px 5px 60px blue;
+    }
+  }
+}
 
 .u-postBlockNeon{
         &:hover{

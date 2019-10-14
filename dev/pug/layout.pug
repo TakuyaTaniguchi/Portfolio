@@ -41,18 +41,18 @@ body#top(class=slug)
 				.l-header_inner
 					h1.l-header_title.u-neon
 						a.l-header_title_link(href="/") Works!!
-				.p-hero
-					.p-hero_inner
-						#rings.p-rings
+					nav.p-nav
+						.p-nav_inner
+							ul.p-nav_list
+								li.p-nav_list_item
+									a.p-nav_list_item_link.u-neonLink.-is-green(href="/") Home
+								li.p-nav_list_item
+									a.p-nav_list_item_link.u-neonLink.-is-green(href="./private.html") BusinessWorks
+								li.p-nav_list_item
+									a.p-nav_list_item_link.u-neonLink.-is-blue(href="https://github.com/TakuyaTaniguchi" target="_blank") Github
+								li.p-nav_list_item
+									a.p-nav_list_item_link.u-neonLink.-is-blue(href="https://twitter.com/RinstarskyKujat/" target="_blank") Twitter
 		block contents
-		block footer
-			.l-footer
-				.l-footer_inner
-					ul.p-snsList
-						li.p-snsList_item
-							a.p-snsList_item_link.u-neon(href="https://github.com/TakuyaTaniguchi" target="_blank") Github
-						li.p-snsList_item
-							a.p-snsList_item_link.u-neon(href="https://twitter.com/RinstarskyKujat/" target="_blank") Twitter
 		block flg
 			#responsive_flg
 		//- #totop

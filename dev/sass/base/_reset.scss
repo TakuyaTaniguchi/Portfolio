@@ -58,7 +58,6 @@ legend {
   padding : 0;
   vertical-align : baseline;
 }
-
 body {
   // color : $font_color;
   font-size : $base_font_size;
@@ -68,8 +67,9 @@ body {
   @if $-webkit-text-size-adjust == false {
     -webkit-text-size-adjust : none;
   }
-  background-image: url('../../images/renga.jpg');
+  background-image: url('../images/renga.jpg');
   color: black;
+  background-color: black;
 }
 
 * {

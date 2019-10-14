@@ -1,0 +1,19 @@
+.p-nav{
+
+    &_inner{
+
+    }
+
+    &_list{
+        display: flex;
+        justify-content: flex-start;
+        &_item{
+            margin: 0 15px;
+            &_link{
+                font-size: 22px;
+                color:white;
+                font-family: Nixie One,cursive;
+            }
+        }
+    }
+}

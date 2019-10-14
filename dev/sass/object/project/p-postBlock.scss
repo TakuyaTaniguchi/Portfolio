@@ -5,6 +5,7 @@
   margin-top: 40px;
 
   &_article {
+    align-self: flex-start;
     border: solid 3px white;
     color: white;
     max-width: 400px;
@@ -45,6 +46,9 @@
     &_desc {
       line-height: 1.7;
       margin-top: 15px;
+      &_link{
+        color: white;
+      }
     }
   }
 }
